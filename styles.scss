@@ -1,0 +1,1077 @@
+@import url("https://fonts.googleapis.com/css2?family=Iceberg&display=swap");
+
+/*****************Animation********************/
+
+@keyframes animateheading {
+  from {
+    filter: hue-rotate(0deg);
+  }
+
+  to {
+    filter: hue-rotate(3000deg);
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-position: -100%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+@keyframes freeani {
+  from {
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+  }
+}
+
+// skills section  animation
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@keyframes leftscroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes leftscroll2 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+@keyframes rightscroll {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes rightscroll2 {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+h2 {
+  margin: auto;
+  width: 15%;
+  font-family: "Kaushan Script", cursive;
+  font-size: 3rem;
+  color: #fff;
+  border-radius: 29px;
+  padding: 11px 19px;
+  animation: animateheading 3s linear infinite;
+  text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+    0 0 200px #0072ff;
+}
+
+/************Wave *****************/
+
+.waves {
+  position: relative;
+  width: 100%;
+  min-height: 130px;
+  max-height: 180px;
+}
+
+/********** Animation wave ****************/
+
+.parallax > use {
+  animation: move-forever 10s cubic-bezier(0.115, 0.45, 0.75, 0.35) infinite;
+}
+
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 16s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+/************* Navbar *****************/
+nav {
+  position: fixed;
+  top: 25vh;
+  left: -37px;
+  background: transparent;
+  z-index: 1;
+
+  ul {
+    text-align: center;
+  }
+
+  li {
+    position: relative;
+    width: 54px;
+    background: rgba(92, 7, 92, 0.764);
+    text-transform: uppercase;
+    transition: all 0.4s ease-out;
+    list-style: none;
+    cursor: pointer;
+  }
+
+  li:after {
+    position: absolute;
+    font-size: 12px;
+    background: white;
+    color: rgba(78, 4, 78, 0.648);
+    top: 0;
+    left: 48px;
+    width: 54px;
+    height: 100%;
+    opacity: 0.5;
+    transform: perspective(400px) rotateY(90deg);
+    transform-origin: 0 100%;
+    transition: all 0.4s ease-out;
+  }
+
+  li:nth-child(1):after {
+    content: "Home";
+    line-height: 46px;
+  }
+
+  li.proficon:after {
+    content: "Profile";
+    line-height: 46px;
+  }
+
+  li.eduicon:after {
+    content: "Studies";
+    line-height: 46px;
+  }
+
+  li.skillicon:after {
+    content: "Skills";
+    line-height: 46px;
+  }
+
+  li.projectsicon:after {
+    content: "Demo";
+    line-height: 46px;
+  }
+
+  li.cntmeicon:after {
+    content: "Say hi";
+    line-height: 46px;
+  }
+
+  li:hover {
+    transform: translateX(-45px);
+  }
+
+  li:hover:after {
+    opacity: 1;
+    transform: perspective(400px) rotateY(0deg) scale(1);
+  }
+}
+
+nav ul li > div {
+  display: inline-block;
+  padding: 10px 0;
+  background: transparent;
+}
+
+nav ul li div {
+  position: relative;
+}
+
+$iconcolor: white;
+
+.icon {
+  color: $iconcolor;
+  font-size: 1.52rem;
+}
+
+/**********BG Home**************/
+
+#home {
+  height: 100vh;
+  background: url("/images/homebg.jpg") no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/******************HEADER*************************/
+
+#sub-heading {
+  position: absolute;
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+  left: 52vw;
+  top: 53vh;
+
+  margin: auto;
+  width: 18%;
+  color: #fff;
+  box-shadow: 2px 2px 2px #ea050580, 10px 1px 12px #ce05e480,
+    2px 2px 10px #0c05e880, 2px 2px 3px #7b03f380, inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #fff, inset 2px 2px 10px #6c09ee,
+    inset 2px 2px 10px #6b06e880;
+  border-radius: 29px;
+  padding: 11px 19px;
+  animation: animateheading 3s linear infinite;
+  text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+    0 0 200px #0072ff;
+}
+
+.heading {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/6963bbf342d87b3a2150bd8f59682b89.jpg);
+  background-clip: text;
+  background-size: contain;
+  width: 90%;
+  text-align: center;
+  color: transparent;
+  font-weight: 900;
+
+  &::before {
+    content: attr(data-heading);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0) 45%,
+      rgba(255, 255, 255, 0.8) 50%,
+      rgba(255, 255, 255, 0) 55%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    background-clip: text;
+    color: transparent;
+    mix-blend-mode: screen;
+    animation: shine 1s infinite;
+    background-size: 200%;
+    text-shadow: 2px 2px 10px rgba(#000, 0.2), -2px 2px 10px rgba(#000, 0.2),
+      -2px -2px 10px rgba(#000, 0.2);
+  }
+}
+
+@font-face {
+  font-family: "frozen";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/Ice%20kingdom%20-%20Bold%20-%20Por%20Kustren.woff");
+}
+
+.heading {
+  top: 40%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-size: 8.9vw;
+  margin: 0;
+  font-family: "frozen", serif;
+  font-weight: 900;
+}
+
+/********************PROFILE********************/
+
+.profile {
+  padding: 10px 0 40px;
+  width: 95vw;
+}
+
+.pic {
+  width: 85%;
+  margin-top: 5px;
+}
+
+.para {
+  margin: 25px 20px 16px;
+  text-align: center;
+}
+
+/*****************EDUCATION****************/
+
+.education {
+  height: auto;
+  padding: 25px 0 80px;
+  color: white;
+  background: linear-gradient(750deg, rgb(18, 18, 18) 0%, rgb(12, 12, 12) 100%),
+    url(https://wallpaperaccess.com/full/1772051.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+}
+
+.edurow {
+  width: 60%;
+  height: 160px;
+  margin: 30px auto;
+  transform-style: preserve-3d;
+  transform: skewX(-25deg);
+  background-image: linear-gradient(
+    to right,
+    rgba(79, 79, 83, 0.3),
+    rgba(27, 27, 28, 0)
+  );
+  padding: 0px 80px;
+  margin: 60px 18% auto;
+}
+
+.eduroweven {
+  margin: 60px 30% auto;
+  background-image: linear-gradient(
+    to right,
+    rgba(90, 83, 83, 0),
+    rgba(79, 79, 83, 0.3)
+  );
+}
+
+.degree {
+  background-image: linear-gradient(to right, #362a4722, #571056);
+  border-radius: 100px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  height: 200px;
+  margin-top: -20px;
+  padding: 50px 10px 5px 20px;
+  transform: skewX(20deg);
+}
+
+.brief {
+  padding: 14px 12px 0;
+  transform: skewX(25deg);
+}
+
+.briefeven {
+  padding: 14px 5px 0;
+  transform: skewX(25deg);
+}
+
+.briefpara {
+  text-align: left;
+  margin-left: 18px;
+}
+
+.briefparaeven {
+  text-align: right;
+  margin-right: 10px;
+}
+
+.bploc {
+  margin-top: -20px;
+  text-align: right;
+}
+
+.bploceven {
+  text-align: left;
+}
+
+/************************ Skills **********************/
+
+.skillsection {
+  position: relative;
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+  background-attachment: fixed;
+  margin: auto;
+  padding: 25px 0 60px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.skillscroll {
+  display: flex;
+  margin: 10px auto;
+  width: 80vw;
+  overflow-x: hidden;
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 30%,
+    #000 70%,
+    transparent
+  );
+}
+
+.skillscroll div {
+  white-space: nowrap;
+  animation: leftscroll 20s linear infinite;
+  animation-delay: -20s;
+}
+
+.skillscroll div:nth-child(2) {
+  animation: leftscroll2 20s linear infinite;
+  animation-delay: -10s;
+}
+
+.secrow div {
+  white-space: nowrap;
+  animation: rightscroll 20s linear infinite;
+  animation-delay: -20s;
+}
+
+.secrow div:nth-child(2) {
+  animation: rightscroll2 20s linear infinite;
+  animation-delay: -10s;
+}
+
+.skillscroll div span img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.skillscroll div span {
+  width: 135px;
+  height: 125px;
+  display: inline-flex;
+  background: #191719ec;
+  border-radius: 10px;
+  margin: 30px 14px 10px;
+  padding: 22px;
+}
+
+.skillscroll div span:hover {
+  background: #2e2d2d;
+  cursor: pointer;
+}
+
+/*************Showcase *********/
+
+.sd {
+  background: linear-gradient(50deg, rgba(0, 0, 0, 0.678) 0%, rgb(0, 0, 0) 100%),
+    url("images/testpic/pic2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+  height: 105vh;
+  margin: 0px;
+  overflow: hidden;
+}
+
+#gallery {
+  height: 140vmax;
+  width: 140vmax;
+  position: relative;
+}
+
+.tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1vmax;
+  position: absolute;
+  transition: transform 800ms ease;
+}
+
+.tile:hover {
+  transform: scale(1.1);
+}
+
+.tile:hover > img {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.tile > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  opacity: 0;
+  transition: opacity 800ms ease, transform 800ms ease;
+}
+
+.tile p {
+  font-family: "Iceberg", sans-serif;
+  font-size: 35px;
+  position: absolute;
+  color: white;
+}
+
+.tile:hover p {
+  opacity: 0;
+  transition: opacity 900ms ease;
+}
+
+.tile:nth-child(1) {
+  background-color: rgba(52, 50, 52, 0.331);
+  height: 14%;
+  width: 21%;
+  left: 5%;
+  top: 5%;
+}
+
+.tile:nth-child(2) {
+  background-color: rgba(52, 50, 52, 0.331);
+  height: 20%;
+  width: 14%;
+  left: 41%;
+  top: 12%;
+}
+
+.tile:nth-child(3) {
+  background-color: rgba(52, 50, 52, 0.331);
+  height: 16%;
+  width: 19%;
+  left: 12%;
+  top: 32%;
+}
+
+.tile:nth-child(4) {
+  background-color: rgba(52, 50, 52, 0.331);
+  height: 14%;
+  width: 14%;
+  left: 45%;
+  top: 48%;
+}
+
+.tile:nth-child(5) {
+  background-color: rgba(52, 50, 52, 0.331);
+  height: 16%;
+  width: 32%;
+  left: 8%;
+  top: 70%;
+}
+
+.tile:nth-child(6) {
+  background-color: rgba(52, 50, 52, 0.331);
+  width: 24%;
+  left: 68%;
+  top: 8%;
+}
+
+.tile:nth-child(7) {
+  background-color: rgba(52, 50, 52, 0.331);
+  height: 16%;
+  width: 22%;
+  left: 53%;
+  top: 74%;
+}
+
+.tile:nth-child(8) {
+  background-color: rgba(52, 50, 52, 0.331);
+  height: 24%;
+  width: 18%;
+  left: 72%;
+  top: 42%;
+}
+
+/************************ Footer **********************/
+
+.end {
+  color: white;
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+.Footer {
+  background: #111113;
+}
+
+.socialmedia {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 41vh;
+  width: 100%;
+}
+
+#upwork,
+#instagram,
+#email,
+#linkedin {
+  font-size: 4.8em;
+  background-color: #18191f;
+  color: #fff;
+  box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,
+    2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00000080;
+  border-radius: 29px;
+  padding: 11px 19px;
+  margin: 0 40px;
+  animation: animate 3s linear infinite;
+  text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+    0 0 200px #0072ff;
+}
+
+#email {
+  animation-delay: 0.3s;
+}
+
+#linkedin {
+  animation-delay: 0.7s;
+}
+
+#upwork {
+  animation-delay: 0.1s;
+}
+
+@keyframes animate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+
+  to {
+    filter: hue-rotate(300deg);
+  }
+}
+
+/**************** MEdia Queries *************/
+
+@media screen and (max-width: 1024px) {
+  nav {
+    li {
+      width: 48px;
+      height: 43px;
+    }
+    li:after {
+      font-size: 8.9px;
+      left: 48px;
+      width: 48px;
+      height: 100%;
+      padding-left: 2px;
+    }
+
+    li:nth-child(1),
+    li.proficon,
+    li.eduicon,
+    li.skillicon,
+    li.projectsicon,
+    li.cntmeicon:after {
+      line-height: 39px;
+    }
+
+    li:hover {
+      transform: translateX(-50px);
+    }
+  }
+
+  h2 {
+    width: 100%;
+    font-size: 2rem;
+    padding: 11px 0;
+  }
+
+  /***** Home section *********/
+
+  #bg-pic {
+    height: 80vh;
+  }
+
+  .heading {
+    top: 36%;
+    font-size: 10vw;
+  }
+
+  #sub-heading {
+    font-size: 1.4rem;
+    left: 38vw;
+    top: 42vh;
+    width: 50%;
+    box-shadow: 2px 2px 2px #ea050580, 10px 1px 8px #ce05e480,
+      2px 2px 10px #0c05e880, 2px 2px 3px #7b03f380, inset 2px 2px 8px #00000080,
+      inset 2px 2px 8px #fff, inset 2px 2px 8px #6c09ee,
+      inset 2px 2px 8px #6b06e880;
+    padding: 8px 19px;
+    text-shadow: 0 0 50px #0072ff, 0 0 80px #0072ff, 0 0 100px #0072ff,
+      0 0 100px #0072ff;
+  }
+
+  .waves {
+    min-height: 100px;
+    max-height: 200px;
+  }
+
+  /********* Profile **********/
+
+  .profile {
+    padding: 10px 25px 40px;
+    font-size: 14px;
+  }
+
+  .pic {
+    width: 75%;
+  }
+
+  /*****************EDUCATION****************/
+
+  h4 {
+    font-size: 11.5px;
+    margin: 2px;
+  }
+
+  h6 {
+    font-size: 10px;
+  }
+
+  .edurow {
+    border-radius: 10px;
+    font-size: 0.6em;
+    margin-top: 22px;
+    width: 75%;
+    height: 150px;
+    min-height: 150px;
+    max-height: 180px;
+    padding: 0px;
+    transform: skewX(-13deg);
+  }
+
+  .eduroweven {
+    margin: 26px 0 26px 57px;
+  }
+
+  .degree {
+    height: 50px;
+    width: 162px;
+    margin-top: 3px;
+    padding: 4px 2px 0 7px;
+    transform: skewX(18deg);
+  }
+
+  .brief {
+    padding: 4px 0 4px;
+    transform: skewX(12deg);
+  }
+
+  .brief h5,
+  .briefeven h5 {
+    font-size: 12.5px;
+    margin-left: 1em;
+    margin-bottom: 4.5px;
+  }
+
+  .briefeven {
+    padding: 7px 5px 0;
+    transform: skewX(9deg);
+  }
+
+  .briefpara {
+    margin-left: 12px;
+  }
+
+  .degree:nth-child(2) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  /********Skills ************/
+
+  .skillscroll {
+    width: 70vw;
+  }
+
+  .skillscroll div span {
+    width: 80px;
+    height: 65px;
+    margin: 20px 5px 10px;
+    padding: 8px;
+  }
+
+  /******Showcase************/
+
+  .sd {
+    pointer-events: none;
+    height: auto;
+  }
+
+  #gallery {
+    height: 100%;
+    width: 80vh;
+    margin: auto;
+  }
+
+  .tile > img {
+    opacity: 1;
+    transition: none;
+    border-radius: 20px;
+  }
+
+  .tile p {
+    font-size: 15px;
+    position: static;
+  }
+
+  #gallery .tile {
+    width: 70%;
+    margin: 30px auto 40px;
+    background-color: transparent;
+    position: static;
+    display: block;
+    height: 200px;
+  }
+
+  /*************Footer**********/
+
+  .socialmedia {
+    height: 32vh;
+  }
+
+  #upwork,
+  #instagram,
+  #email,
+  #linkedin {
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 10px 15px 2px;
+  }
+
+  .end {
+    flex-basis: 100%;
+    font-size: 13px;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 640px) {
+  .pic {
+    width: 70%;
+  }
+
+  #sub-heading {
+    width: 35%;
+    margin: 8px 0 0 45px;
+  }
+
+  h4 {
+    font-size: 12px;
+  }
+
+  .edurow {
+    font-size: 0.75em;
+  }
+
+  .brief h5,
+  .briefeven h5 {
+    font-size: 14.2px;
+  }
+
+  .degree {
+    width: 170px;
+  }
+
+  .bploceven {
+    margin: 5px 25px;
+  }
+
+  #gallery .tile {
+    width: 80vh;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1024px) {
+  .profile {
+    width: 80%;
+    margin: auto;
+  }
+
+  .pic {
+    width: 60%;
+  }
+
+  #sub-heading {
+    width: 32%;
+    margin: 12px 0 0 60px;
+  }
+
+  h4 {
+    font-size: 13px;
+  }
+
+  h6 {
+    font-size: 10.6px;
+  }
+
+  .edurow {
+    font-size: 0.8em;
+  }
+
+  .brief h5,
+  .briefeven h5 {
+    font-size: 15px;
+  }
+
+  .degree {
+    width: 180px;
+  }
+
+  .bploceven {
+    margin: 5px 25px;
+  }
+
+  .skillscroll div span {
+    width: 90px;
+    height: 75px;
+  }
+
+  #gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+  }
+
+  #gallery .tile {
+    width: 42%;
+  }
+
+  .edurow:nth-child(2) .bploc {
+    position: absolute;
+    right: 0;
+  }
+}
+
+@media (min-width: 730px) and (max-width: 1024px) {
+  #sub-heading {
+    font-size: 1.6rem;
+    width: 200px;
+    margin: 18px 0 0 100px;
+  }
+
+  h4 {
+    font-size: 14px;
+    margin: -1px;
+  }
+
+  h6 {
+    font-size: 11px;
+  }
+
+  .edurow {
+    font-size: 0.86em;
+  }
+
+  .brief h5,
+  .briefeven h5 {
+    font-size: 16px;
+  }
+
+  .degree {
+    width: 200px;
+  }
+  .skillscroll {
+    width: 82%;
+  }
+  .skillscroll div span {
+    width: 110px;
+    height: 95px;
+    margin: 20px 10px 10px;
+    padding: 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .profile {
+    width: 100%;
+    padding: 10px 40px 40px;
+    font-size: 14px;
+  }
+
+  .pic {
+    width: 20rem;
+    margin-top: 4.3rem;
+  }
+
+  .brief,
+  .briefeven {
+    width: 100%;
+  }
+}
+
+@media (min-width: 850px) and (max-width: 1024px) {
+  .pic {
+    margin-top: 3rem;
+  }
+
+  .brief,
+  .briefeven {
+    width: 95%;
+  }
+
+  .briefeven {
+    margin-left: 2.5rem;
+  }
+
+  .bploceven {
+    margin: 5px 35px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1240px) {
+  #sub-heading {
+    font-size: 1.6rem;
+    width: 200px;
+  }
+  #upwork,
+  #instagram,
+  #email,
+  #linkedin {
+    font-size: 3.8em;
+    margin: 0 28px;
+  }
+
+  .edurow {
+    width: 72%;
+    margin-left: auto;
+  }
+
+  .eduroweven {
+    margin-left: 130px;
+  }
+  .pic {
+    margin-top: 2.2rem;
+    margin-left: -25px;
+    width: 100%;
+  }
+}
