@@ -485,8 +485,7 @@ $iconcolor: white;
 /*************Showcase *********/
 
 .sd {
-  background: linear-gradient(50deg, rgba(0, 0, 0, 0.678) 0%, rgb(0, 0, 0) 100%),
-    url("images/pic2.jpg");
+  background: url("images/pic2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
