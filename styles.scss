@@ -709,10 +709,6 @@ $iconcolor: white;
 
   /***** Home section *********/
 
-  #home {
-    height: 80vh;
-  }
-
   .heading {
     top: 36%;
     font-size: 10vw;
@@ -832,7 +828,7 @@ $iconcolor: white;
 
   #gallery {
     height: 100%;
-    width: 80vh;
+    width: 100vw;
     margin: auto;
   }
 
@@ -859,16 +855,16 @@ $iconcolor: white;
   /*************Footer**********/
 
   .socialmedia {
-    height: 32vh;
+    height: 20vh;
   }
 
   #upwork,
   #instagram,
   #email,
   #linkedin {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     padding: 0;
-    margin: 10px 15px 2px;
+    margin: 10px 15px 0px;
   }
 
   .end {
@@ -910,7 +906,7 @@ $iconcolor: white;
   }
 
   #gallery .tile {
-    width: 80vh;
+    width: 60vw;
   }
 }
 
