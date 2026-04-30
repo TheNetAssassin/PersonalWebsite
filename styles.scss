@@ -89,7 +89,10 @@ h2 {
   border-radius: 29px;
   padding: 11px 19px;
   animation: animateheading 3s linear infinite;
-  text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+  text-shadow:
+    0 0 50px #0072ff,
+    0 0 100px #0072ff,
+    0 0 150px #0072ff,
     0 0 200px #0072ff;
 }
 
@@ -253,20 +256,28 @@ $iconcolor: white;
   position: absolute;
   font-family: "Dancing Script", cursive;
   font-size: 2rem;
-  left: 52vw;
+  left: 45vw;
   top: 53vh;
 
   margin: auto;
-  width: 18%;
+  width: 33%;
   color: #fff;
-  box-shadow: 2px 2px 2px #ea050580, 10px 1px 12px #ce05e480,
-    2px 2px 10px #0c05e880, 2px 2px 3px #7b03f380, inset 2px 2px 10px #00000080,
-    inset 2px 2px 10px #fff, inset 2px 2px 10px #6c09ee,
+  box-shadow:
+    2px 2px 2px #ea050580,
+    10px 1px 12px #ce05e480,
+    2px 2px 10px #0c05e880,
+    2px 2px 3px #7b03f380,
+    inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #fff,
+    inset 2px 2px 10px #6c09ee,
     inset 2px 2px 10px #6b06e880;
   border-radius: 29px;
   padding: 11px 19px;
   animation: animateheading 3s linear infinite;
-  text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+  text-shadow:
+    0 0 50px #0072ff,
+    0 0 100px #0072ff,
+    0 0 150px #0072ff,
     0 0 200px #0072ff;
 }
 
@@ -297,7 +308,9 @@ $iconcolor: white;
     mix-blend-mode: screen;
     animation: shine 1s infinite;
     background-size: 200%;
-    text-shadow: 2px 2px 10px rgba(#000, 0.2), -2px 2px 10px rgba(#000, 0.2),
+    text-shadow:
+      2px 2px 10px rgba(#000, 0.2),
+      -2px 2px 10px rgba(#000, 0.2),
       -2px -2px 10px rgba(#000, 0.2);
   }
 }
@@ -327,7 +340,7 @@ $iconcolor: white;
 
 .pic {
   width: 85%;
-  margin-top: 5px;
+  margin-top: 4px;
 }
 
 .para {
@@ -341,7 +354,8 @@ $iconcolor: white;
   height: auto;
   padding: 25px 0 80px;
   color: white;
-  background: linear-gradient(750deg, rgb(18, 18, 18) 0%, rgb(12, 12, 12) 100%),
+  background:
+    linear-gradient(750deg, rgb(18, 18, 18) 0%, rgb(12, 12, 12) 100%),
     url(https://wallpaperaccess.com/full/1772051.jpg);
   background-position: center;
   background-size: cover;
@@ -485,7 +499,8 @@ $iconcolor: white;
 /*************Showcase *********/
 
 .sd {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       50deg,
       rgba(151, 149, 151, 0.838) 0%,
       rgb(106, 104, 104) 100%
@@ -531,7 +546,9 @@ $iconcolor: white;
   object-fit: cover;
   object-position: top;
   opacity: 0;
-  transition: opacity 800ms ease, transform 800ms ease;
+  transition:
+    opacity 800ms ease,
+    transform 800ms ease;
 }
 
 .tile p {
@@ -637,15 +654,23 @@ $iconcolor: white;
   font-size: 4.8em;
   background-color: #18191f;
   color: #fff;
-  box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,
-    2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
-    inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
+  box-shadow:
+    2px 2px 2px #00000080,
+    10px 1px 12px #00000080,
+    2px 2px 10px #00000080,
+    2px 2px 3px #00000080,
+    inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00000080,
     inset 2px 2px 10px #00000080;
   border-radius: 29px;
   padding: 11px 19px;
   margin: 0 40px;
   animation: animate 3s linear infinite;
-  text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+  text-shadow:
+    0 0 50px #0072ff,
+    0 0 100px #0072ff,
+    0 0 150px #0072ff,
     0 0 200px #0072ff;
 }
 
@@ -716,15 +741,23 @@ $iconcolor: white;
 
   #sub-heading {
     font-size: 1.4rem;
-    left: 38vw;
+    left: 32vw;
     top: 42vh;
-    width: 50%;
-    box-shadow: 2px 2px 2px #ea050580, 10px 1px 8px #ce05e480,
-      2px 2px 10px #0c05e880, 2px 2px 3px #7b03f380, inset 2px 2px 8px #00000080,
-      inset 2px 2px 8px #fff, inset 2px 2px 8px #6c09ee,
+    width: 60%;
+    box-shadow:
+      2px 2px 2px #ea050580,
+      10px 1px 8px #ce05e480,
+      2px 2px 10px #0c05e880,
+      2px 2px 3px #7b03f380,
+      inset 2px 2px 8px #00000080,
+      inset 2px 2px 8px #fff,
+      inset 2px 2px 8px #6c09ee,
       inset 2px 2px 8px #6b06e880;
     padding: 8px 19px;
-    text-shadow: 0 0 50px #0072ff, 0 0 80px #0072ff, 0 0 100px #0072ff,
+    text-shadow:
+      0 0 50px #0072ff,
+      0 0 80px #0072ff,
+      0 0 100px #0072ff,
       0 0 100px #0072ff;
   }
 
@@ -880,7 +913,8 @@ $iconcolor: white;
   }
 
   #sub-heading {
-    width: 35%;
+    width: 55%;
+    left: 28vw;
     margin: 8px 0 0 45px;
   }
 
@@ -921,7 +955,7 @@ $iconcolor: white;
   }
 
   #sub-heading {
-    width: 32%;
+    width: 44%;
     margin: 12px 0 0 60px;
   }
 
@@ -975,7 +1009,7 @@ $iconcolor: white;
 @media (min-width: 730px) and (max-width: 1024px) {
   #sub-heading {
     font-size: 1.6rem;
-    width: 200px;
+    width: 330px;
     margin: 18px 0 0 100px;
   }
 
@@ -1051,7 +1085,7 @@ $iconcolor: white;
 @media (min-width: 1024px) and (max-width: 1240px) {
   #sub-heading {
     font-size: 1.6rem;
-    width: 200px;
+    width: 340px;
   }
   #upwork,
   #instagram,
