@@ -47,7 +47,7 @@ function Header() {
         Naseera Parvin
       </h1>
       <h2 className="sub-heading" id="sub-heading">
-        Web Developer
+        Web Developer | IT Support
       </h2>
     </div>
   );
